@@ -33,7 +33,6 @@ Visit `http://localhost:8000` and follow the page navigation. Stop the server wi
 - Root `*.html` files contain the individual pages.
 - [css/](css/) contains page stylesheets. Some filenames contain spaces; preserve their exact spelling when changing links.
 - [images/](images/) contains the supplied restaurant and menu assets.
-- [readme.txt](readme.txt) preserves the original source note.
 
 ## Scope
 
@@ -41,10 +40,6 @@ The repository provides frontend pages. Their presence does not establish functi
 
 Restaurant branding and images are retained as part of the historical coursework. This is a student portfolio project, not a claim of affiliation with or an official website for Ajisen Ramen. Menu details and promotions should be treated as historical content.
 
-## Reviewing changes
+## Author
 
-After editing a page, open it through the local server, follow its navigation links, and check that its stylesheet and images load. Check form behaviour and narrow-screen layouts separately; these manual browser checks have not been recorded as passing tests here.
-
-## Credits and verification
-
-The original presentation is credited to **Chua Jia Sheng**. Original proposal, presentation, and course brief are retained separately. Relative source paths were preserved during preparation; the site has not been audited for full browser compatibility, accessibility, or production use.
+Chua Jia Sheng.
