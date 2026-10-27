@@ -1,0 +1,178 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 1366px;
+  margin: auto;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+nav img {
+  border: none;
+  position: relative;
+  width: auto;
+  height: 100px;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+  flex: 1;
+}
+nav a:link {
+  color: black;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: bold;
+}
+nav a:visited {
+  color: black;
+}
+nav a:hover {
+  color: white;
+  border-top: solid red 2px;
+  border-bottom: solid red 2px;
+  background-color: grey;
+}
+nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+#nav1 {
+  justify-content: left;
+  margin-top: 60px;
+}
+#nav2 {
+  justify-content: right;
+  margin-top: 60px;
+}
+#login{
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+footer p {
+  font-size: 1em;
+  padding: 10px;
+  text-align: right;
+  color: black;
+}
+.footerflex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  background-color: peru;
+  margin-top: 50px;
+}
+.footerflex p {
+  padding: 10px;
+  text-align: center;
+}
+.footerflex img {
+  border-radius: 100%;
+  width: 10%;
+  border: #605540 solid 7px;
+}
+.copyright {
+  text-align: center;
+  background-color: #605540;
+  padding: 20px;
+  font-size: 20px;
+}
+#delivery,
+#social,
+#feedback {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 20px;
+}
+details{
+  box-shadow: 1px 1px 5px grey;
+  position: relative;
+  padding-bottom: 50px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+iframe{
+  padding-top: 10px;
+}
+.info{
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows:repeat(1,1fr) ;
+  display: grid;
+}
+h1{
+  font-size: 34px;
+}
+img:hover {
+  transform: scale(1.05, 1.05);
+}
+.fixed {
+  position: fixed;
+  top: 650px;
+  padding-left: 1300px;
+  width: 100px;
+}
+.fixed img{
+  border-radius: 200%;
+}
+img{
+  width: 100%;
+}
+
+
+legend {
+  text-align: center;
+  border: 5px solid black;
+  background-color: peru;
+  padding: 0px 10px;
+}
+fieldset {
+  border: 5px solid;
+}
+label {
+  width: 100px;
+  text-align: right;
+  padding: 10px;
+  display: inline-block;
+  padding-left: 100px;
+}
+.submit {
+  padding: 10px;
+  text-align: right;
+}
+button {
+  margin-right: 10px;
+}
+.submit button{
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  background-color: peru;
+}
+button:hover {
+  cursor:pointer
+}
+.comments {
+  position: relative;
+  bottom: 140px;
+}
+#comments {
+  margin-top: 25px;
+}

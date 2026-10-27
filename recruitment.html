@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajisen Ramen</title>
+    <link rel="icon" type="image/png" href="images/logo.jpg" />
+    <link rel="stylesheet" href="css/recruitment.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <img src="images/logo.jpg" alt="Ajisen Ramen Logo" />
+        <ul id="nav1">
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="menu.html" title="Menu">Menu</a></li>
+          <li><a href="order.html" title="Order">Order</a></li>
+          <li><a href="aboutUs.html" title="About us">About Us</a></li>
+          <li><a href="contactUs.html" title="Contact Us">Contact Us</a></li>
+        </ul>
+        <ul id="nav2">
+          <li>
+            <a href="login.html" title="Login" id="login">Login / Register</a>
+          </li>
+        </ul>
+      </nav>
+      <hr />
+
+      <img src="images/hire.jpg" alt="hire" />
+      <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+      <fieldset>
+        <legend><h1>Apply Form</h1></legend>
+        <div>
+          <label>Name:</label>
+          <input type="text" name="Name" required pattern="[a-zA-Z]{0-50}" title="Enter alphabet only" />
+        </div>
+        <div>
+          <label>Email:</label>
+          <input type="email" name="Email" required placeholder="myname@example.com" />
+        </div>
+        <div>
+          <label>Phone Number:</label>
+          <input type="tel" name="Phone Number" required />
+        </div>
+        <div>
+          <label>Applied Position:</label>
+          <select name="Position" required>
+              <option value="Service Crew">Service Crew</option>
+              <option value="Kitchen Crew">Kitchen Crew</option>
+          </select>
+        </div>
+        <div>
+          <label>Earliest Posible Start Date:</label>
+          <input type="date" name="Start Date" required>
+        </div>
+        <div>
+          <label>Expected End Date</label>
+          <input type="date" name="End Date" required>
+        </div>
+        <div>
+          <label>Preferred Interview Date:</label>
+          <input type="datetime-local" name="Interview Date" required>
+        </div>
+        <div class="submit">
+          <button type="submit">Submit</button>
+          <button type="clear">Clear</button>
+        </div>
+      </fieldset>
+      </form>
+
+      <footer class="footerflex">
+        <div class="delivery">
+          <p id="delivery">Delivery Platform</p>
+          <p>
+            <a href="order.html"><img src="images/logo.jpg" alt="Ajisen Ramen Logo"></a>
+          </p>
+          <p>
+            <a href="https://food.grab.com/" target="_blank"
+              ><img src="images/grabfood.png" alt="Grabfood Logo" id="Grab"
+            /></a>
+          </p>
+          <p>
+            <a href="https://www.foodpanda.sg/" target="_blank"
+              ><img src="images/foodpanda.jpg" alt="Foodpanda Logo"
+            /></a>
+          </p>
+          <p>
+            <a href="https://deliveroo.com.sg/" target="_blank"
+              ><img src="images/deliveroo.png" alt="Deliveroo Logo"
+            /></a>
+          </p>
+        </div>
+        <div class="media">
+          <p id="social">Social Media</p>
+          <p>
+            <a href="https://www.instagram.com/ajisensg/?hl=enF" target="_blank"
+              ><img src="images/ig.jpg" alt="Instagram Logo" id="ig"
+            /></a>
+          </p>
+          <p>
+            <a href="https://www.ajisen.com.sg/" target="_blank"
+              ><img src="images/google.png" alt="Google Logo" id="google"
+            /></a>
+          </p>
+          <p>
+            <a href="https://www.facebook.com/ajisen.singapore/" target="_blank"
+              ><img src="images/facebook.png" alt="Facebook Logo"
+            /></a>
+          </p>
+        </div>
+        <div class="feedback">
+          <p id="feedback">Links</p>
+          <p><a href="contactUs.html#feed">Feedback Form</a></p>
+          <p><a href="recruitment.html">Join Us Now!!!</a></p>
+        </div>
+  </footer>
+  <div class="copyright">
+    <p>Copyright &copy; Ajisen Ramen 2023 done by [Jia Sheng 222257U].</p>
+  </div>
+    </main>
+  </body>
+</html>

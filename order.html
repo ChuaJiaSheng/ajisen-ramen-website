@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajisen Ramen</title>
+    <link rel="icon" type="image/png" href="images/logo.jpg"/>
+    <link rel="stylesheet" href="css/order.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <img src="images/logo.jpg" alt="Ajisen Ramen Logo" />
+        <ul id="nav1">
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="menu.html" title="Menu">Menu</a></li>
+          <li><a href="order.html" title="Order">Order</a></li>
+          <li><a href="aboutUs.html" title="About us">About Us</a></li>
+          <li><a href="contactUs.html" title="Contact Us">Contact Us</a></li>
+        </ul>
+        <ul id="nav2">
+          <li><a href="login.html" title="Login" id="login">Login / Register</a></li>
+        </ul>
+      </nav>
+      <hr />
+      <div class="fixed">
+        <a href="mailto:feedback@jfh.com.sg?subject=Enquire about Ajisen Ramen&amp;body=Dear%20Mr/Mrs,""><img src="images/email.png" alt="email"></a>
+      </div>
+      <header>
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <div id="flex-container">
+        <fieldset>
+          <legend><h1>Order</h1></legend>
+          <div>
+            <label>Order:</label>
+            <select name="Order" id="order">
+              <optgroup label="Kebab Ramen">
+                <optgroup label="&nbsp;&nbsp;&nbsp;&nbsp; Noodle" id="noodle">
+                  <option value="Kebab ramen">&nbsp; Kebab Ramen</option>
+                  <option value="Spicy Kebab ramen">&nbsp; Spyicy Kebab Ramen</option>
+                  <option value="Kebab Dry Noodle">&nbsp; Kebab Dry Noodle</option>
+                </optgroup>
+                <optgroup label="&nbsp;&nbsp;&nbsp;&nbsp; Rice" id="rice">
+                  <option value="Kebab Don">&nbsp; Kebab Don</option>
+                  <option value="Kebab Rice Set">&nbsp; Kebab Rice Set</option>
+                </optgroup>
+              </optgroup>
+            </select>
+          </div>
+        <div>
+          <label>Quantity:</label>
+          <input type="number" name="Order Quantity" min="1" max="50" required>
+        </div>
+        <div>
+          <label>Side Dish:</label>
+          <select name="Side" id="side">
+            <option value="Empty"></option>
+            <optgroup label="Drinks & Breverages">
+              <optgroup label="&nbsp;&nbsp;&nbsp;&nbsp; Drinks" id="Drinks">
+                <option value="Lychee Soda">&nbsp;Lychee Soda</option>
+                <option value="Peach Soda">&nbsp;Peach Soda</option>
+                <option value="Strawberry Soda">&nbsp;Strawberry Soda</option>
+                <option value="Grape Soda">&nbsp;Grape Soda</option>
+                <option value="Cola">&nbsp;Cola</option>
+                <option value="Fun Lemom">&nbsp;Fun Lemon</option>
+                <option value="Ice Lemon">&nbsp;Ice Lemon</option>
+                <option value="Hot Houji">&nbsp;Hot Houji</option>
+                <option value="Cold Houji">&nbsp;Cold Houji</option>
+                <option value="Mineral Water">&nbsp;Mineral Water</option>
+              </optgroup>
+              <optgroup label="&nbsp;&nbsp;&nbsp;&nbsp; Breverages" id="breverages">
+                <option value="Homemake Japanses Pudding">&nbsp;Homemake Japanses Pudding</option>
+              </optgroup>
+            </optgroup>
+          </select>
+        </div>
+        <div>
+          <label>Quantity:</label>
+          <input type="number" min="0" max="50" name="Side Dish Quantity">
+        </div>
+        <div>
+          <label class="request">Special Request:</label>
+          <textarea name="Special Request" id="request" cols="30" rows="10" placeholder="For special request only. If no request enter 'Nil'" required
+          ></textarea>
+        </div>
+        </fieldset>
+        <fieldset class="delivery">
+          <legend><h1>Delivery Detail</h1></legend>
+          <div>
+            <label>Name:</label>
+            <input name="Name" type="text" required placeholder="Enter your name here">
+          </div>
+          <div>
+            <label>Mobile Number:</label>
+            <input name="Mobile Number" type="tel" title="Please enter 8 numbers only" required pattern="[8-9]{1}[0-9]{7}" maxlength="8" placeholder="Enter your mobile number">
+          </div>
+          <div>
+            <label>Email:</label>
+            <input name="Email" type="email" required placeholder="Enter your email">
+          </div>
+          <div>
+            <label>Delivery Date & Time:</label>
+            <input name="Delivery Date & Time" type="datetime-local" required>
+          </div>
+          <div>
+            <label class="address">Address:</label>
+            <textarea name="Address" id="address" cols="30" rows="10" required placeholder="Enter your address"></textarea>
+          </div>
+          <div>
+            <label>Postal Code:</label>
+            <input name="Postal Code" type="text" required maxlength="6" >
+          </div>
+          <div class="submit">
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+          </div>
+        </fieldset>
+        </div>
+        </form>
+      </header>
+      <footer class="footerflex">
+        <div class="delivery">
+          <p id="delivery">Delivery Platform</p>
+          <p>
+            <a href="order.html"><img src="images/logo.jpg" alt="Ajisen Ramen Logo"></a>
+          </p>
+          <p>
+            <a href="https://food.grab.com/" target="_blank"
+              ><img src="images/grabfood.png" alt="Grabfood Logo" id="Grab"
+            /></a>
+          </p>
+          <p>
+            <a href="https://www.foodpanda.sg/" target="_blank"
+              ><img src="images/foodpanda.jpg" alt="Foodpanda Logo"
+            /></a>
+          </p>
+          <p>
+            <a href="https://deliveroo.com.sg/" target="_blank"
+              ><img src="images/deliveroo.png" alt="Deliveroo Logo"
+            /></a>
+          </p>
+        </div>
+        <div class="media">
+          <p id="social">Social Media</p>
+          <p>
+            <a href="https://www.instagram.com/ajisensg/?hl=enF" target="_blank"
+              ><img src="images/ig.jpg" alt="Instagram Logo" id="ig"
+            /></a>
+          </p>
+          <p>
+            <a href="https://www.ajisen.com.sg/" target="_blank"
+              ><img src="images/google.png" alt="Google Logo" id="google"
+            /></a>
+          </p>
+          <p>
+            <a href="https://www.facebook.com/ajisen.singapore/" target="_blank"
+              ><img src="images/facebook.png" alt="Facebook Logo"
+            /></a>
+          </p>
+        </div>
+        <div class="feedback">
+          <p id="feedback">Links</p>
+          <p><a href="contactUs.html#feed">Feedback Form</a></p>
+          <p><a href="recruitment.html">Join Us Now!!!</a></p>
+        </div>
+      </footer>
+    </footer>
+    <div class="copyright">
+      <p>Copyright &copy; Ajisen Ramen 2023 done by [Jia Sheng 222257U].</p>
+    </div>
+    </main>
+  </body>
+</html>

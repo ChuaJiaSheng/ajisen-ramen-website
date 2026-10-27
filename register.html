@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajisen Ramen</title>
+    <link rel="icon" type="image/png" href="images/logo.jpg"/>
+    <link rel="stylesheet" href="css/register.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <img src="images/logo.jpg" alt="Ajisen Ramen Logo" />
+        <ul id="nav1">
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="menu.html" title="Menu">Menu</a></li>
+          <li><a href="order.html" title="Order">Order</a></li>
+          <li><a href="aboutUs.html" title="About us">About Us</a></li>
+          <li><a href="contactUs.html" title="Contact Us">Contact Us</a></li>
+        </ul>
+        <ul id="nav2">
+          <li>
+            <a href="login.html" title="Login" id="login">Login / Register</a>
+          </li>
+        </ul>
+      </nav>
+      <hr />
+      <header>
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+          <div id="flex-container">
+            <fieldset>
+              <legend><h1>Register</h1></legend>
+              <div>
+                <label>Login ID:</label>
+                <input name="Login" type="text" required />
+              </div>
+              <div>
+                <label>Name:</label>
+                <input
+                  type="text"
+                  name="Name"
+                  required
+                  pattern="[a -zA-Z]{0-50}"
+                  title="Must not contain number"
+                />
+              </div>
+              <div>
+                <label>Password:</label>
+                <input
+                  type="password"
+                  name="Password"
+                  required
+                  title="Password must be strong. Include at least 8 charaters including number, uppercse and/or special charaters"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  minlength="8"
+                />
+              </div>
+              <div>
+                <label>Gender:</label>
+                <input type="radio" name="gender" title="Must select one of the options" value="Male"/>Male
+                <input type="radio" name="gender" title="Must select one of the options" value="Femal"/>Female
+              </div>
+              <div>
+                <label>Mobile number:</label>
+                <input type="tel" name="Mobile" required pattern="[8-9]{1}[0-9]{7}"/>
+              </div>
+              <div>
+                <label>Race:</label>
+                <select name="Race" required>
+                  <option value="Chinese">Chinese</option>
+                  <option value="Malay">Malay</option>
+                  <option value="Indian">Indian</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div>
+                <label>Personal Email Address:</label>
+                <input type="email" name="Email" required />
+              </div>
+              <div>
+                <label class="address">Address:</label>
+                <textarea
+                  name="Address"
+                  id="address"
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+              <div class="submit">
+                <button type="submit">Register</button>
+                <button type="reset">Clear</button>
+              </div>
+              <section>
+                Have a account? <a href="login.html">Click here to login!!</a>
+              </section>
+            </fieldset>
+          </div>
+        </form>
+      </header>
+      <footer class="footerflex">
+        <div class="delivery">
+          <p id="delivery">Delivery Platform</p>
+          <p>
+            <a href="order.html"><img src="images/logo.jpg" alt="Ajisen Ramen Logo"></a>
+          </p>
+          <p>
+            <a href="https://food.grab.com/" target="_blank"
+              ><img src="images/grabfood.png" alt="Grabfood Logo" id="Grab"
+            /></a>
+          </p>
+          <p>
+            <a href="https://www.foodpanda.sg/" target="_blank"
+              ><img src="images/foodpanda.jpg" alt="Foodpanda Logo"
+            /></a>
+          </p>
+          <p>
+            <a href="https://deliveroo.com.sg/" target="_blank"
+              ><img src="images/deliveroo.png" alt="Deliveroo Logo"
+            /></a>
+          </p>
+        </div>
+        <div class="media">
+          <p id="social">Social Media</p>
+          <p>
+            <a href="https://www.instagram.com/ajisensg/?hl=enF" target="_blank"
+              ><img src="images/ig.jpg" alt="Instagram Logo" id="ig"
+            /></a>
+          </p>
+          <p>
+            <a href="https://www.ajisen.com.sg/" target="_blank"
+              ><img src="images/google.png" alt="Google Logo" id="google"
+            /></a>
+          </p>
+          <p>
+            <a href="https://www.facebook.com/ajisen.singapore/" target="_blank"
+              ><img src="images/facebook.png" alt="Facebook Logo"
+            /></a>
+          </p>
+        </div>
+        <div class="feedback">
+          <p id="feedback">Links</p>
+          <p><a href="contactUs.html#feed">Feedback Form</a></p>
+          <p><a href="recruitment.html">Join Us Now!!!</a></p>
+        </div>
+      </footer>
+      <div class="copyright">
+        <p>Copyright &copy; Ajisen Ramen 2023 done by [Jia Sheng 222257U].</p>
+      </div>
+    </main>
+  </body>
+</html>
