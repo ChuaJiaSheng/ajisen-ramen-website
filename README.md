@@ -18,15 +18,21 @@ A multi-page restaurant website created as HTML/CSS coursework. The pages presen
 | [recruitment.html](recruitment.html) | Recruitment information/form |
 | [login.html](login.html), [register.html](register.html) | Account-form layouts |
 
-## View locally
+## Reproduce locally
 
-Open `index.html` directly in a browser, or run a local static server from the repository root:
+**Prerequisites:** Git, Python 3, and a web browser. No backend, API credentials, or package installation is required.
 
 ```sh
+git clone https://github.com/ChuaJiaSheng/ajisen-ramen-website.git
+cd ajisen-ramen-website
 python -m http.server 8000
 ```
 
-Visit `http://localhost:8000` and follow the page navigation. Stop the server with Ctrl+C. No package installation, API keys, or database setup is required to inspect the static pages.
+If your system uses `python3`, substitute it for `python`. Open `http://localhost:8000/index.html` in a browser.
+
+**Expected result:** the restaurant homepage renders with its banner, styles, and navigation. Open the menu and another page through the navigation; their images and styles should also load. This reproduces the static interface, not order processing or account authentication.
+
+Stop the server with Ctrl+C. If port 8000 is occupied, use `python -m http.server 8001` and open port 8001 instead. If the browser shows a directory listing or missing files, make sure the terminal is in the cloned repository root. Preserve the filenames, including spaces and capital letters, when editing asset paths.
 
 ## Folder guide
 
